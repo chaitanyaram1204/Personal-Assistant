@@ -2,7 +2,7 @@ import os.path
 import datetime as dt
 
 from google.auth.transport.requests import Request
-from google.oauth2.credentials import Credentials
+from google.oauth2.credentials import Credentials 
 from google_auth_oauthlib.flow import InstalledAppFlow
 from googleapiclient.discovery import build
 from googleapiclient.errors import HttpError
@@ -20,7 +20,7 @@ def add_event(data):
         if creds and creds.expired and creds.refresh_token:
             creds.refresh(Request())
         else:
-            flow = InstalledAppFlow.from_client_secrets_file("credentials.json", SCOPES)
+            flow = InstalledAppFlow.from_client_secrets_file("credentials.json", SCOPES) //USE your credentials file
             creds = flow.run_local_server(port=0)
 
         with open("token.json", "w") as token:
@@ -37,9 +37,9 @@ def add_event(data):
             "start": {"dateTime": data[2], "timeZone": "(GMT+5:30)Kolkata"},  # Set the time zone to IST
             "end": {"dateTime": data[3], "timeZone": "(GMT+5:30)Kolkata"},    # Set the time zone to IST
             "attendees": [
-                {"email": "gsyamasameera2004@gmail.com"},
-                {"email": "satwik9903@gmail.com"},
-                {"email": "chaitanyaamajala@gmail.com"}
+                {"email": "ATTENDEES MAIL"},
+                {"email": "ATTENDEES MAIL"},
+                {"email": "ATTENDEES MAIL"}
             ],
             "reminders": {
                 "useDefault": False,
