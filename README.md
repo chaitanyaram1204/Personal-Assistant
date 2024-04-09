@@ -16,6 +16,7 @@ This is a Python-based personal assistant project that utilizes various APIs and
 - Speech synthesis to respond to user queries
 
 ## Getting Started
+Add your google cloud credentials file
 
 ### Prerequisites
 
