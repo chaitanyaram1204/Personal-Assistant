@@ -10,7 +10,7 @@ import google.generativeai as palm
 
 def talk_to_palm(data):
 
-    palm.configure(api_key='AIzaSyCfB8zi95jtaf7T74gKxki4zVDoYWqarOk')
+    palm.configure(api_key='Your KEY')
     
     
     models = [m for m in palm.list_models() if 'generateText' in m.supported_generation_methods]
