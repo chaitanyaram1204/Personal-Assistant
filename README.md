@@ -2,6 +2,8 @@
 
 Personal Assistant Project
 
+Collaborators: [Satwik](https://github.com/panda9903/), [Sameera](https://github.com/meera-04)
+
 ## Introduction
 
 This is a Python-based personal assistant project that utilizes various APIs and libraries to perform tasks such as playing music, adding events to the calendar, managing tasks, prompting a virtual assistant (Palm), and playing videos. The assistant can understand voice commands and respond accordingly.
